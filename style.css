@@ -82,7 +82,7 @@ nav{
     margin:0 0.2rem;
 
     /* transition */
-    transition: background-color 300ms ease-in 0ms;
+    transition: background-color 200ms ease-in 0ms;
 }
 
 .navbutton:hover
@@ -111,7 +111,7 @@ nav{
     color: azure;
 
     /* transitions */
-    transition: text-shadow 300ms ease-in 0s;
+    transition: text-shadow 200ms ease-in 0s;
 }
 
 .navbutton:hover a
