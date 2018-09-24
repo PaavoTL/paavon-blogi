@@ -26,13 +26,16 @@
         <main>
             <section>
                 <article id="Demo">
-                    <script>
-                        function form_output()
-                        {
-
-                        }
-                    </script>
                 </article>
+                
+                <script>
+                    function form_output()
+                    {
+                        var data = document.getElementById("myform").submit();
+
+                        document.getElementById("demo").innerHTML = data;
+                    }
+                 </script>
             </section>
             <aside>
                  <div class="sidewrap">
