@@ -26,11 +26,20 @@
         <main>
             <section>
                 <article>
-                    <form action="form_output.html">
-                        <input type="text">
-                        <input type="submit">
+                    <h1 id="demo"></h1>
+                    <form id="myform" target="_blank">
+                        <input type="text" name="data"> <br><br>
+                        <input type="submit" onclick="form_output()">
                     </form>
                 </article>
+                <script>
+                    function form_output()
+                    {
+                        var data = document.getElementById("myform").innerHTML;
+
+                        document.getElementById("demo").innerHTML = data;
+                    }
+                </script>
             </section>
             <aside>
                  <div class="sidewrap">
