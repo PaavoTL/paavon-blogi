@@ -54,10 +54,17 @@ p
 }
 
 header{
-    background-color: #ffffff;
+    background-color: #ecf8ff;
 
     /* change at :root */
     height: var(--header-height);
+}
+
+#logo{
+    position: relative;
+    width: 60rem;
+    left: 4rem;
+    top: 4rem;
 }
 
 /* navigation */
