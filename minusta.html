@@ -29,15 +29,16 @@
             <section>
                 <article>
                     <h1 id="demo"></h1>
-                    <form id="myform" target="_blank">
-                        <input type="text" name="data"> <br><br>
-                        <input type="submit" onclick="form_output()">
+                    <form id="myform" target="_self" method="POST">
+                        <input type="text" name="data" id="customData"> <br><br>
+                        <input type="submit" onclick="form_output()" value="Submit">
                     </form>
+                    <button type="button" onclick="form_output()">Submit2</button>
                 </article>
                 <script>
                     function form_output()
                     {
-                        var data = document.getElementById("myform").innerHTML;
+                        let data = document.getElementById("customData").innerHTML;
 
                         document.getElementById("demo").innerHTML = data;
                     }
